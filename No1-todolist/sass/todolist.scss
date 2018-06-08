@@ -1,0 +1,159 @@
+@import "layout";
+
+$orange-light: #FD9E84;
+$orange-dark: #FC6C43;
+$blue-light: #9AACC1;
+$blue-dark: #294461;
+$gray-light: #f9f9f9;
+
+$font-normal: 1em;
+$font-large: 1.3em;
+$font-small: 0.9em;
+
+body {
+    background: linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    .main-content {
+        margin: 50px auto;
+        padding: 30px 25px;
+        align-items: center;
+        background-color: $gray-light;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 0 2px 19px #EE6139;
+        header {
+            h4 {
+                color: $orange-dark;
+                display: inline-block;
+                font-size: $font-large;
+                font-weight: bold;
+                padding: 15px;
+            }
+            .menu {
+                display: inline-block;
+                float: right;
+                padding: 15px;
+                font-size: $font-small;
+                button {
+                    margin: 0 10px;
+                    color: $blue-light;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                button.active {
+                    color: $blue-dark;
+                    border-bottom: 1.5px solid $blue-dark;
+                }
+            }
+        }
+        .todo-content {
+            .list {
+                margin: 20px 15px;
+                padding: 25px;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+            .border-orange {
+                border: 1px solid $orange-dark;
+            }
+            .border-gray {
+                border: 1px solid $blue-light;
+            }
+            .add-list {
+                p {
+                    color: $blue-light;
+                    width: 100%;
+                }
+            }
+            .todo-list {
+                button {
+                    width: 100%;
+                    padding: 0;
+                    color: $blue-dark;
+                    i {
+                        color: $blue-light;
+                    }
+                    .fas.fa-star { 
+                        color: $orange-dark; 
+                    }
+                    .list-content {
+                        width: 50%;
+                        position: relative;
+                        min-height: 1px;
+                    }
+                    .list-text {
+                        float: left;
+                        text-align: left;
+                    }
+                    .list-icon {
+                        float: left;
+                        text-align: right;
+                        i {
+                            padding-left: 5px;
+                        }
+                    }
+                    .notes {
+                        float: left;
+                        text-align: left;
+                        text-indent: 11.5px;
+                        font-size: $font-small;
+                        padding-top: 10px;
+                        color: $blue-light;
+                    }
+                }
+                .card {
+                    border-top: 1px solid $blue-light;
+                    margin-top: 20px;
+                    font-size: $font-small;
+                    text-indent: 11.5px;
+                    padding-top: 20px;
+                    color: $blue-light;
+                    p {
+                        padding: 10px 0;
+                    }
+                    .deadline {
+                        width: 60%;
+                        margin-left: 40px;
+                        border: none;
+                        background-color: $gray-light;
+                        border-radius: none;
+                        margin-bottom: 10px;
+                        color: $blue-light;
+                        font-size: $font-small;
+                    }
+                    .add {
+                        width: 40px;
+                        margin-left: 40px;
+                        margin-bottom: 10px;
+                        padding: 12px 0;
+                        text-align: center;
+                        text-indent: -1px;
+                        background-color: $gray-light;
+                        color: $blue-light;
+                    }
+                    textarea {
+                        width: 80%;
+                        margin-left: 40px;
+                        border: none;
+                        border-radius: 0;
+                        background-color: $gray-light;
+                    }
+                    .save {
+                        text-align: center;
+                        background-color: $orange-dark;
+                        color: #fff;
+                        padding: 10px;
+                        margin: 20px auto 5px auto;
+                        width: 50%;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

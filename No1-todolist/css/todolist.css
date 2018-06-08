@@ -1,0 +1,264 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  text-align: inherit;
+  outline: none; }
+
+body {
+  background: -webkit-linear-gradient(315deg, #FD9E84 0%, #FC6C43 100%);
+  background: -o-linear-gradient(315deg, #FD9E84 0%, #FC6C43 100%);
+  background: linear-gradient(135deg, #FD9E84 0%, #FC6C43 100%); }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .container .main-content {
+    margin: 50px auto;
+    padding: 30px 25px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    width: 50%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 19px #EE6139;
+    box-shadow: 0 2px 19px #EE6139; }
+    .container .main-content header h4 {
+      color: #FC6C43;
+      display: inline-block;
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 15px; }
+    .container .main-content header .menu {
+      display: inline-block;
+      float: right;
+      padding: 15px;
+      font-size: 0.9em; }
+      .container .main-content header .menu button {
+        margin: 0 10px;
+        color: #9AACC1; }
+        .container .main-content header .menu button:last-child {
+          margin-right: 0; }
+      .container .main-content header .menu button.active {
+        color: #294461;
+        border-bottom: 1.5px solid #294461; }
+    .container .main-content .todo-content .list {
+      margin: 20px 15px;
+      padding: 25px;
+      border-radius: 5px;
+      background-color: #fff; }
+    .container .main-content .todo-content .border-orange {
+      border: 1px solid #FC6C43; }
+    .container .main-content .todo-content .border-gray {
+      border: 1px solid #9AACC1; }
+    .container .main-content .todo-content .add-list p {
+      color: #9AACC1;
+      width: 100%; }
+    .container .main-content .todo-content .todo-list button {
+      width: 100%;
+      padding: 0;
+      color: #294461; }
+      .container .main-content .todo-content .todo-list button i {
+        color: #9AACC1; }
+      .container .main-content .todo-content .todo-list button .fas.fa-star {
+        color: #FC6C43; }
+      .container .main-content .todo-content .todo-list button .list-content {
+        width: 50%;
+        position: relative;
+        min-height: 1px; }
+      .container .main-content .todo-content .todo-list button .list-text {
+        float: left;
+        text-align: left; }
+      .container .main-content .todo-content .todo-list button .list-icon {
+        float: left;
+        text-align: right; }
+        .container .main-content .todo-content .todo-list button .list-icon i {
+          padding-left: 5px; }
+      .container .main-content .todo-content .todo-list button .notes {
+        float: left;
+        text-align: left;
+        text-indent: 11.5px;
+        font-size: 0.9em;
+        padding-top: 10px;
+        color: #9AACC1; }
+    .container .main-content .todo-content .todo-list .card {
+      border-top: 1px solid #9AACC1;
+      margin-top: 20px;
+      font-size: 0.9em;
+      text-indent: 11.5px;
+      padding-top: 20px;
+      color: #9AACC1; }
+      .container .main-content .todo-content .todo-list .card p {
+        padding: 10px 0; }
+      .container .main-content .todo-content .todo-list .card .deadline {
+        width: 60%;
+        margin-left: 40px;
+        border: none;
+        background-color: #f9f9f9;
+        border-radius: none;
+        margin-bottom: 10px;
+        color: #9AACC1;
+        font-size: 0.9em; }
+      .container .main-content .todo-content .todo-list .card .add {
+        width: 40px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        padding: 12px 0;
+        text-align: center;
+        text-indent: -1px;
+        background-color: #f9f9f9;
+        color: #9AACC1; }
+      .container .main-content .todo-content .todo-list .card textarea {
+        width: 80%;
+        margin-left: 40px;
+        border: none;
+        border-radius: 0;
+        background-color: #f9f9f9; }
+      .container .main-content .todo-content .todo-list .card .save {
+        text-align: center;
+        background-color: #FC6C43;
+        color: #fff;
+        padding: 10px;
+        margin: 20px auto 5px auto;
+        width: 50%;
+        border-radius: 20px; }

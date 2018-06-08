@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/todolist.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-content">
+            <header>
+                <h4>To Do List</h4>
+                <div class="menu">
+                    <button class="active" onclick="filterSelection('all')">全部</button>
+                    <button onclick="filterSelection('progress')">待處理</button>
+                    <button onclick="filterSelection('completed')">已處理</button>
+                </div>
+            </header>
+            <div class="todo-content">
+                <div class="list add-list border-gray">
+                    <p>+ 新增代辦事項</p>
+                </div>
+                <div class="list todo-list border-orange">
+                    <p>
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#list1" aria-expanded="false" aria-controls="list1">
+                            <div class="list-content list-text">
+                                <a href=""><i class="far fa-check-circle"></i></a><span> 買水壺</span>
+                            </div>
+                            <div class="list-content list-icon">
+                                <a href=""><i class="fas fa-star"></i></a>
+                                <a href=""><i class="far fa-edit"></i></a>
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                            </div>
+                            <div class="list-content notes">
+                                <i class="far fa-calendar-alt"></i><span> 6/6</span><i class="far fa-file"></i><i class="far fa-comment-dots"></i>
+                        </button>
+                    </p>
+                    <div class="collapse" id="list1">
+                        <div class="card card-body">
+                            <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
+                            <input type="date" class="form-control deadline">
+                            <p><i class="far fa-file"></i><span> 附加檔案</span></p>
+                            <label class="add">
+                                <input style="display:none;" type="file">+
+                            </label>
+                            <p><i class="far fa-comment-dots"></i><span> 新增附註</span></p>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <button class="save">儲存</button>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="list todo-list border-orange">
+                        <p>
+                            <button class="btn" type="button" data-toggle="collapse" data-target="#list2" aria-expanded="false" aria-controls="list2">
+                                <div class="list-content list-text">
+                                    <a href=""><i class="far fa-check-circle"></i></a><span> 洗照片</span>
+                                </div>
+                                <div class="list-content list-icon">
+                                    <a href=""><i class="fas fa-star"></i></a>
+                                    <a href=""><i class="far fa-edit"></i></a>
+                                    <a href=""><i class="far fa-trash-alt"></i></a>
+                                </div>
+                                <div class="list-content notes"><i class="far fa-comment-dots"></i>
+                            </button>
+                        </p>
+                        <div class="collapse" id="list2">
+                            <div class="card card-body">
+                                <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
+                            <input type="date" class="form-control deadline">
+                            <p><i class="far fa-file"></i><span> 附加檔案</span></p>
+                            <label class="add">
+                                <input style="display:none;" type="file">+
+                            </label>
+                            <p><i class="far fa-comment-dots"></i><span> 新增附註</span></p>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <button class="save">儲存</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
