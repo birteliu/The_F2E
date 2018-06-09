@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/todolist.css">
@@ -14,17 +15,18 @@
         <div class="main-content">
             <header>
                 <h4>To Do List</h4>
-                <div class="menu">
-                    <button class="active" onclick="filterSelection('all')">全部</button>
-                    <button onclick="filterSelection('progress')">待處理</button>
-                    <button onclick="filterSelection('completed')">已處理</button>
+                <div class="menu" id="myBtnContainer">
+                    <button class="menu-btn active" onclick="filterSelection('all')">全部</button>
+                    <button class="menu-btn" onclick="filterSelection('processing')">待處理</button>
+                    <button class="menu-btn" onclick="filterSelection('completed')">已處理</button>
                 </div>
             </header>
             <div class="todo-content">
-                <div class="list add-list border-gray">
-                    <p>+ 新增代辦事項</p>
+                <div class="list add-list">
+                    <!-- <p>+ 新增代辦事項</p> -->
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+ 新增代辦事項">
                 </div>
-                <div class="list todo-list border-orange">
+                <div class="list todo-list border-orange processing">
                     <p>
                         <button class="btn" type="button" data-toggle="collapse" data-target="#list1" aria-expanded="false" aria-controls="list1">
                             <div class="list-content list-text">
@@ -37,6 +39,7 @@
                             </div>
                             <div class="list-content notes">
                                 <i class="far fa-calendar-alt"></i><span> 6/6</span><i class="far fa-file"></i><i class="far fa-comment-dots"></i>
+                            </div>
                         </button>
                     </p>
                     <div class="collapse" id="list1">
@@ -52,24 +55,24 @@
                             <button class="save">儲存</button>
                         </div>
                     </div>
-                    </div>
-                    <div class="list todo-list border-orange">
-                        <p>
-                            <button class="btn" type="button" data-toggle="collapse" data-target="#list2" aria-expanded="false" aria-controls="list2">
-                                <div class="list-content list-text">
-                                    <a href=""><i class="far fa-check-circle"></i></a><span> 洗照片</span>
-                                </div>
-                                <div class="list-content list-icon">
-                                    <a href=""><i class="fas fa-star"></i></a>
-                                    <a href=""><i class="far fa-edit"></i></a>
-                                    <a href=""><i class="far fa-trash-alt"></i></a>
-                                </div>
-                                <div class="list-content notes"><i class="far fa-comment-dots"></i>
-                            </button>
-                        </p>
-                        <div class="collapse" id="list2">
-                            <div class="card card-body">
-                                <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
+                </div>
+                <div class="list todo-list border-orange processing">
+                    <p>
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#list2" aria-expanded="false" aria-controls="list2">
+                            <div class="list-content list-text">
+                                <a href=""><i class="far fa-check-circle"></i></a><span> 洗照片</span>
+                            </div>
+                            <div class="list-content list-icon">
+                                <a href=""><i class="fas fa-star"></i></a>
+                                <a href=""><i class="far fa-edit"></i></a>
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                            </div>
+                            <div class="list-content notes"><i class="far fa-comment-dots"></i></div>
+                        </button>
+                    </p>
+                    <div class="collapse" id="list2">
+                        <div class="card card-body">
+                            <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
                             <input type="date" class="form-control deadline">
                             <p><i class="far fa-file"></i><span> 附加檔案</span></p>
                             <label class="add">
@@ -78,14 +81,177 @@
                             <p><i class="far fa-comment-dots"></i><span> 新增附註</span></p>
                             <textarea class="form-control" aria-label="With textarea"></textarea>
                             <button class="save">儲存</button>
-                            </div>
                         </div>
+                    </div>
+                </div>
+                <div class="list todo-list border-gray processing">
+                    <p>
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#list3" aria-expanded="false" aria-controls="list3">
+                            <div class="list-content list-text">
+                                <a href=""><i class="far fa-check-circle"></i></a><span> 帶削鉛筆機</span>
+                            </div>
+                            <div class="list-content list-icon">
+                                <a href=""><i class="far fa-star"></i></a>
+                                <a href=""><i class="far fa-edit"></i></a>
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </button>
+                    </p>
+                    <div class="collapse" id="list3">
+                        <div class="card card-body">
+                            <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
+                            <input type="date" class="form-control deadline">
+                            <p><i class="far fa-file"></i><span> 附加檔案</span></p>
+                            <label class="add">
+                                <input style="display:none;" type="file">+
+                            </label>
+                            <p><i class="far fa-comment-dots"></i><span> 新增附註</span></p>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <button class="save">儲存</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list todo-list border-gray processing">
+                    <p>
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#list4" aria-expanded="false" aria-controls="list4">
+                            <div class="list-content list-text">
+                                <a href=""><i class="far fa-check-circle"></i></a><span> 去小琉球注意事項</span>
+                            </div>
+                            <div class="list-content list-icon">
+                                <a href=""><i class="far fa-star"></i></a>
+                                <a href=""><i class="far fa-edit"></i></a>
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                            </div>
+                            <div class="list-content notes">
+                                <i class="far fa-calendar-alt"></i><span> 6/25</span><i class="far fa-comment-dots"></i>
+                            </div>
+                        </button>
+                    </p>
+                    <div class="collapse" id="list4">
+                        <div class="card card-body">
+                            <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
+                            <input type="date" class="form-control deadline">
+                            <p><i class="far fa-file"></i><span> 附加檔案</span></p>
+                            <label class="add">
+                                <input style="display:none;" type="file">+
+                            </label>
+                            <p><i class="far fa-comment-dots"></i><span> 新增附註</span></p>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <button class="save">儲存</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list todo-list border-gray completed">
+                    <p>
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#list5" aria-expanded="false" aria-controls="list5">
+                            <div class="list-content list-text">
+                                <a href=""><i class="fas fa-check-circle"></i></a> <span class="done"">繳電話費</span>
+                            </div>
+                            <div class="list-content list-icon">
+                                <a href=""><i class="far fa-star"></i></a>
+                                <a href=""><i class="far fa-edit"></i></a>
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                            </div>
+                            <div class="list-content notes">
+                                <i class="far fa-calendar-alt"></i><span> 5/28</span><i class="far fa-comment-dots"></i>
+                            </div>
+                        </button>
+                    </p>
+                    <div class="collapse" id="list5">
+                        <div class="card card-body">
+                            <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
+                            <input type="date" class="form-control deadline">
+                            <p><i class="far fa-file"></i><span> 附加檔案</span></p>
+                            <label class="add">
+                                <input style="display:none;" type="file">+
+                            </label>
+                            <p><i class="far fa-comment-dots"></i><span> 新增附註</span></p>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <button class="save">儲存</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="list todo-list border-gray completed">
+                    <p>
+                        <button class="btn" type="button" data-toggle="collapse" data-target="#list6" aria-expanded="false" aria-controls="list6">
+                            <div class="list-content list-text">
+                                <a href=""><i class="fas fa-check-circle"></i></a> <span class="done"">寫國文作業</span>
+                            </div>
+                            <div class="list-content list-icon">
+                                <a href=""><i class="far fa-star"></i></a>
+                                <a href=""><i class="far fa-edit"></i></a>
+                                <a href=""><i class="far fa-trash-alt"></i></a>
+                            </div>
+                        </button>
+                    </p>
+                    <div class="collapse" id="list6">
+                        <div class="card card-body">
+                            <p><i class="far fa-calendar-alt"></i><span> 最後期限</span></p>
+                            <input type="date" class="form-control deadline">
+                            <p><i class="far fa-file"></i><span> 附加檔案</span></p>
+                            <label class="add">
+                                <input style="display:none;" type="file">+
+                            </label>
+                            <p><i class="far fa-comment-dots"></i><span> 新增附註</span></p>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                            <button class="save">儲存</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="js/bootstrap.js"></script>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+    filterSelection("all") // Execute the function and show all columns
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("list");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("menu-btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+    </script>
 </body>
 
 </html>
