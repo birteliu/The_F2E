@@ -25,8 +25,13 @@ $phoneWidth: 415px;
 }
 
 body {
-    background: linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
+    // background: linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
     min-height: 100vh;
+    // background-image: url(../img/circle.png);
+    // background-position:30px 60px;
+    // background-repeat:no-repeat;
+    // background: $orange-light url(../img/circle.png) center top no-repeat;
+    background: url(../img/circle.png) 150% -160% no-repeat, linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
 }
 
 .container {
