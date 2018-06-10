@@ -25,12 +25,7 @@ $phoneWidth: 415px;
 }
 
 body {
-    // background: linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
     min-height: 100vh;
-    // background-image: url(../img/circle.png);
-    // background-position:30px 60px;
-    // background-repeat:no-repeat;
-    // background: $orange-light url(../img/circle.png) center top no-repeat;
     background: url(../img/circle.png) 140% 300% no-repeat, linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
     background-attachment:fixed
 }
@@ -80,6 +75,11 @@ body {
                     &:last-child {
                         margin-right: 0;
                     }
+                    &:hover {
+                        color: darken($blue-light, 10%);
+                        transition: all .2s ease-in-out;
+                        cursor: pointer;
+                    }
                     @include phone {
                         margin: 0 3px;
                     }
@@ -128,8 +128,15 @@ body {
                     i {
                         color: $blue-light;
                     }
+                    .far:hover {
+                            color: darken($blue-light, 10%);
+                            transition: all .2s ease-in-out;
+                        }
                     .fas { 
                         color: $orange-dark; 
+                        &:hover {
+                            color: darken($orange-dark, 5%);
+                        }
                     }
                     .list-content {
                         width: 50%;
@@ -184,6 +191,12 @@ body {
                         text-indent: -1px;
                         background-color: $gray-light;
                         color: $blue-light;
+                        &:hover {
+                            background-color: darken($gray-light, 3%);
+                            color: darken($blue-light, 10%);
+                            transition: all .3s ease-in-out;
+                            cursor: pointer;
+                        }
                     }
                     textarea {
                         width: 80%;
@@ -200,6 +213,11 @@ body {
                         margin: 20px auto 5px auto;
                         width: 50%;
                         border-radius: 20px;
+                        &:hover {
+                            background-color: darken($orange-dark, 5%);
+                            transition: all .3s ease-in-out;
+                            cursor: pointer;
+                        }
                     }
                 }
             }

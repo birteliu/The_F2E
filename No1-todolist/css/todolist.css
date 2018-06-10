@@ -196,6 +196,12 @@ body {
         color: #9AACC1; }
         .container .main-content header .menu button:last-child {
           margin-right: 0; }
+        .container .main-content header .menu button:hover {
+          color: #7a92ae;
+          -webkit-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+          cursor: pointer; }
         @media screen and (max-width: 415px) {
           .container .main-content header .menu button {
             margin: 0 3px; } }
@@ -237,8 +243,15 @@ body {
           text-decoration: line-through; }
         .container .main-content .todo-content .todo-list button i {
           color: #9AACC1; }
+        .container .main-content .todo-content .todo-list button .far:hover {
+          color: #7a92ae;
+          -webkit-transition: all .2s ease-in-out;
+          -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out; }
         .container .main-content .todo-content .todo-list button .fas {
           color: #FC6C43; }
+          .container .main-content .todo-content .todo-list button .fas:hover {
+            color: #fc582a; }
         .container .main-content .todo-content .todo-list button .list-content {
           width: 50%;
           position: relative; }
@@ -284,6 +297,13 @@ body {
           text-indent: -1px;
           background-color: #f9f9f9;
           color: #9AACC1; }
+          .container .main-content .todo-content .todo-list .card .add:hover {
+            background-color: #f1f1f1;
+            color: #7a92ae;
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            cursor: pointer; }
         .container .main-content .todo-content .todo-list .card textarea {
           width: 80%;
           margin-left: 40px;
@@ -298,5 +318,11 @@ body {
           margin: 20px auto 5px auto;
           width: 50%;
           border-radius: 20px; }
+          .container .main-content .todo-content .todo-list .card .save:hover {
+            background-color: #fc582a;
+            -webkit-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            cursor: pointer; }
     .container .main-content .todo-content .show {
       display: block; }
