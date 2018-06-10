@@ -144,9 +144,10 @@ button {
 
 body {
   min-height: 100vh;
-  background: url(../img/circle.png) 150% -160% no-repeat, -webkit-linear-gradient(315deg, #FD9E84 0%, #FC6C43 100%);
-  background: url(../img/circle.png) 150% -160% no-repeat, -o-linear-gradient(315deg, #FD9E84 0%, #FC6C43 100%);
-  background: url(../img/circle.png) 150% -160% no-repeat, linear-gradient(135deg, #FD9E84 0%, #FC6C43 100%); }
+  background: url(../img/circle.png) 140% 300% no-repeat, -webkit-linear-gradient(315deg, #FD9E84 0%, #FC6C43 100%);
+  background: url(../img/circle.png) 140% 300% no-repeat, -o-linear-gradient(315deg, #FD9E84 0%, #FC6C43 100%);
+  background: url(../img/circle.png) 140% 300% no-repeat, linear-gradient(135deg, #FD9E84 0%, #FC6C43 100%);
+  background-attachment: fixed; }
 
 .container {
   display: -webkit-box;

@@ -31,7 +31,8 @@ body {
     // background-position:30px 60px;
     // background-repeat:no-repeat;
     // background: $orange-light url(../img/circle.png) center top no-repeat;
-    background: url(../img/circle.png) 150% -160% no-repeat, linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
+    background: url(../img/circle.png) 140% 300% no-repeat, linear-gradient(135deg, $orange-light 0%, $orange-dark 100%);
+    background-attachment:fixed
 }
 
 .container {
