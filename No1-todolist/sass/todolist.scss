@@ -80,6 +80,9 @@ body {
                         transition: all .2s ease-in-out;
                         cursor: pointer;
                     }
+                    &:focus {
+                        outline: 0;
+                    }
                     @include phone {
                         margin: 0 3px;
                     }
