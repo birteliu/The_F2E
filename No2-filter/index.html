@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Birte - No.2 Filter</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/googleSearch.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-between header-content">
+            <div class="col-3">
+                <h2>Berlin</h2>
+            </div>
+            <div class="col-5">
+                <input type="text" class="search" placeholder="快速搜尋">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 search-result">
+                <p>顯示 <span>56</span> 個搜尋結果結果</p>
+                <a href="#">Neukölln <i class="far fa-times-circle"></i></a>
+                <a href="#">景點 <i class="far fa-times-circle"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 filter-content">
+                <form class="select-area">
+                    <h4>選擇行政區</h4>
+                    <select name="Location">
+                        <option value="Mitte">Mitte</option>
+                        <option value="Friedrichshain">Friedrichshain</option>
+                        <option value="Kreuzberg">Kreuzberg</option>
+                        <option value="Tempelhof">Tempelhof</option>
+                        <option value="Pankow">Pankow</option>
+                        <option value="Charlottenburg">Charlottenburg</option>
+                        <option value="Wilmersdorf">Wilmersdorf</option>
+                        <option value="Spandau">Spandau</option>
+                        <option value="Neukölln">Neukölln</option>
+                        <option value="Zehlendorf">Zehlendorf</option>
+                        <option value="Steglitz">Steglitz</option>
+                        <option value="Köpenick">Köpenick</option>
+                        <option value="Treptow">Treptow</option>
+                        <option value="Hellersdorf">Hellersdorf</option>
+                        <option value="Marzahn">Marzahn</option>
+                        <option value="Lichtenberg">Lichtenberg</option>
+                        <option value="Reinickendorf">Reinickendorf</option>
+                    </select>
+                </form>
+                <hr>
+                <div class="check-box">
+                    <h4>想去的類型</h4>
+                    <label class="check-content">餐廳
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-content">戶外景點
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-content">節慶
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-content">購物
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-content">博物館
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="check-content">其他
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <hr>
+                <div class="choose-box">
+                    <h4>入場需求</h4>
+                    <label class="choose-content">免費參觀
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="radiobtn"></span>
+                    </label>
+                    <label class="choose-content">門票入場
+                        <input type="radio" name="radio">
+                        <span class="radiobtn"></span>
+                    </label>
+                    <label class="choose-content">需最低消費
+                        <input type="radio" name="radio">
+                        <span class="radiobtn"></span>
+                    </label>
+                </div>
+                <h3>Berlin</h3>
+            </div>
+            <div class="col-md-9 filter-card">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/hackesche.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5>Hackesche Höfe</h5>
+                                    <p>帶些歐元前往這城市其中一處最有趣的購物區購買設計師商品和新潮服飾。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Mitte</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/fernsehturm.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5>Der Berliner Fernsehturm</h5>
+                                    <p>共高368米，是德國最高建築物同時也是歐洲第四高的建築物。在1969年建成時曾是世界第二高電視塔。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Mitte</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/judendenkmal.jpeg" alt="">
+
+                                <div class="card-body">
+                                    <h5>Denkmal für die ermordeten Juden Europas</h5>
+                                    <p>亦稱為浩劫紀念碑，由彼得·艾森曼及布羅·哈普達設計，紀念浩劫中受害的猶太人。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Mitte</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/berlinerdom.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5>Berliner Dom</h5>
+                                    <p>是德國柏林的一座基督教路德宗教堂，位於柏林市區博物館島的東部，曾是德意志帝國霍亨索倫王朝的宮廷教堂。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Mitte</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                    	<a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/reichstag.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5>Reichstag</h5>
+                                    <p>1894 至 1933 年間首先是德意志帝國的帝國議會，後來在威瑪共和國時期是共和國議會的議會會址。1999 年開始它是德國聯邦議院的會址。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Mitte</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                    	<a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/brandenburgertor.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5>Brandenburger Tor</h5>
+                                    <p>布蘭登堡門是柏林的象徵，也是德國的國家象徵標誌，它見證了柏林、德國、歐洲乃至世界的許多重要歷史事件。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Mitte</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                    	<a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/berlinermauer.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5>Berliner Mauer - East Side Gallery</h5>
+                                    <p>是德國分裂期間，東德政府環繞西柏林邊境修築的全封閉的邊防系統。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Friedrichshain</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                    	<a href="" >
+                            <div class="card">
+                                <img class="card-img-top" src="img/tempelhof.jpeg" alt="">
+                                <div class="card-body">
+                                    <h5>Flughafen Tempelhof</h5>
+                                    <p>柏林其中一個舊機場，冷戰時期這機場擔當重要角色，柏林封鎖時拍林空運在這裏發生，後來更接收東德的難民。現在機場已關閉，並開闢成公園。</p>
+                                    <p class="location"><i class="fas fa-map-marker-alt"></i> Tempelhof</p>
+                            				<p class="price"><i class="fas fa-flag-checkered"></i> 免費參觀</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 page">
+                    	<ul>
+                    		<li><a href="" class="page-icon"><i class="fas fa-angle-double-left"></i></a></li>
+                    		<li><a href="" class="actived">1</a></li>
+                    		<li><a href="">2</a></li>
+                    		<li><a href="">3</a></li>
+                    		<li><a href="">4</a></li>
+                    		<li><a href="">5</a></li>
+                    		<li><a href="" class="page-icon"><i class="fas fa-angle-double-right"></i></a></li>
+                    	</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
