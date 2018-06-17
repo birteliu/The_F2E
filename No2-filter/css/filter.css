@@ -329,7 +329,7 @@ body {
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
     .filter-content .choose-box .choose-content:hover input ~ .radiobtn {
-      background-color: #f2f4f6;
+      background-color: white;
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s; }
@@ -394,6 +394,12 @@ body {
   .filter-card a .card {
     height: 100%;
     position: relative; }
+    .filter-card a .card:hover {
+      -webkit-box-shadow: 2px 2px 5px #d2dce3;
+      box-shadow: 2px 2px 5px #d2dce3;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
     .filter-card a .card h5 {
       color: #2F3441;
       font-size: 1.3em;

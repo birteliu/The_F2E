@@ -205,7 +205,7 @@ body {
         .choose-content {
             &:hover {
             	input~.radiobtn {
-            	background-color: lighten($blue-l, 20%);
+            	background-color: lighten($blue-l, 25%);
             	transition: .3s;
         			}
             }
@@ -280,6 +280,10 @@ body {
 		.card {
 			height: 100%;
 			position: relative;
+			&:hover {
+				box-shadow: 2px 2px 5px lighten($blue-l, 10%);
+				transition: .3s;
+			}
 			h5 {
 				color: $blue-d;
 				font-size: $font-b;
