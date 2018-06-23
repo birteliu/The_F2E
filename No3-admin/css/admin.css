@@ -91,6 +91,12 @@ body {
         .main-header nav ul li a {
           color: #4ACAC8;
           text-decoration: none; }
+          .main-header nav ul li a:hover {
+            color: #33aeac;
+            border-bottom: 1px solid #33aeac;
+            -webkit-transition: .4s;
+            -o-transition: .4s;
+            transition: .4s; }
 
 .section1 {
   padding: 6rem 6rem 0 6rem;
@@ -108,7 +114,8 @@ body {
     color: #1D3547;
     font-size: 1.2em;
     display: inline-block;
-    line-height: 2; }
+    line-height: 2;
+    font-weight: bold; }
   .section1 .time-menu {
     display: inline-block; }
     .section1 .time-menu select {

@@ -72,6 +72,11 @@ body {
                 a {
                     color: $green-d;
                     text-decoration: none;
+                    &:hover {
+                    	color: darken($green-d, 10%);
+                    	border-bottom: 1px solid darken($green-d, 10%);
+                    	transition: .4s;
+                    }
                 }
             }
         }
@@ -92,6 +97,7 @@ body {
         font-size: 1.2em;
         display: inline-block;
         line-height: 2;
+        font-weight: bold;
     }
     .time-menu {
         display: inline-block;
