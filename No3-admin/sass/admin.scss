@@ -380,6 +380,7 @@ $button-width: 35px;
     z-index: 100;
     transition: opacity .25s ease;
     display: none;
+    z-index: 9999;
     @include pad {
         display: block;
     }
@@ -444,6 +445,7 @@ $button-width: 35px;
         opacity: .9;
         visibility: visible;
         height: 100%;
+        padding-top: 3rem;
         li {
             animation: fadeInRight .5s ease forwards;
             animation-delay: .35s;
