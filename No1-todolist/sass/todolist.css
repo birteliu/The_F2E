@@ -1,0 +1,405 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  text-align: inherit;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  background: url(../img/circle.png) 140% 300% no-repeat, linear-gradient(135deg, #FD9E84 0%, #FC6C43 100%);
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 415px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.container .main-content {
+  margin: 50px auto;
+  padding: 30px 25px;
+  align-items: center;
+  background-color: #f9f9f9;
+  width: 55%;
+  border-radius: 10px;
+  box-shadow: 0 2px 19px #EE6139;
+}
+
+@media screen and (max-width: 992px) {
+  .container .main-content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .container .main-content {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    min-height: 100vh;
+  }
+}
+
+.container .main-content header h4 {
+  color: #FC6C43;
+  display: inline-block;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 15px;
+}
+
+@media screen and (max-width: 415px) {
+  .container .main-content header h4 {
+    padding-right: 0;
+  }
+}
+
+.container .main-content header .menu {
+  display: inline-block;
+  float: right;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+.container .main-content header .menu button {
+  margin: 0 10px;
+  color: #9AACC1;
+}
+
+.container .main-content header .menu button:last-child {
+  margin-right: 0;
+}
+
+.container .main-content header .menu button:hover {
+  color: #7a92ae;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.container .main-content header .menu button:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 415px) {
+  .container .main-content header .menu button {
+    margin: 0 3px;
+  }
+}
+
+.container .main-content header .menu button.active {
+  color: #294461;
+  border-bottom: 1.5px solid #294461;
+}
+
+.container .main-content .todo-content .list {
+  margin: 20px 15px;
+  padding: 25px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 415px) {
+  .container .main-content .todo-content .list {
+    padding: 20px;
+  }
+}
+
+.container .main-content .todo-content .border-orange {
+  border: 1px solid #FC6C43;
+}
+
+.container .main-content .todo-content .border-gray {
+  border: 1px solid #9AACC1;
+}
+
+.container .main-content .todo-content .add-list input {
+  width: 100%;
+  border: none;
+}
+
+.container .main-content .todo-content .add-list input::placeholder {
+  color: #9AACC1;
+}
+
+.container .main-content .todo-content .todo-list {
+  box-shadow: 0 2px 5px #E8E8E8;
+  display: none;
+}
+
+.container .main-content .todo-content .todo-list button {
+  width: 100%;
+  padding: 0;
+  color: #294461;
+}
+
+.container .main-content .todo-content .todo-list button span.done {
+  text-decoration: line-through;
+}
+
+.container .main-content .todo-content .todo-list button i {
+  color: #9AACC1;
+}
+
+.container .main-content .todo-content .todo-list button .far:hover {
+  color: #7a92ae;
+  transition: all .2s ease-in-out;
+}
+
+.container .main-content .todo-content .todo-list button .fas {
+  color: #FC6C43;
+}
+
+.container .main-content .todo-content .todo-list button .fas:hover {
+  color: #fc582a;
+}
+
+.container .main-content .todo-content .todo-list button .list-content {
+  width: 50%;
+  position: relative;
+}
+
+.container .main-content .todo-content .todo-list button .list-text {
+  float: left;
+  text-align: left;
+}
+
+.container .main-content .todo-content .todo-list button .list-icon {
+  float: left;
+  text-align: right;
+}
+
+.container .main-content .todo-content .todo-list button .list-icon i {
+  padding-left: 5px;
+}
+
+.container .main-content .todo-content .todo-list button .notes {
+  float: left;
+  text-align: left;
+  text-indent: 11.5px;
+  font-size: 0.9em;
+  padding-top: 10px;
+  color: #9AACC1;
+}
+
+.container .main-content .todo-content .todo-list .card {
+  border-top: 1px solid #9AACC1;
+  margin-top: 20px;
+  font-size: 0.9em;
+  text-indent: 11.5px;
+  padding-top: 20px;
+  color: #9AACC1;
+}
+
+.container .main-content .todo-content .todo-list .card p {
+  padding: 10px 0;
+}
+
+.container .main-content .todo-content .todo-list .card .deadline {
+  width: 60%;
+  margin-left: 40px;
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: none;
+  margin-bottom: 10px;
+  color: #9AACC1;
+  font-size: 0.9em;
+}
+
+.container .main-content .todo-content .todo-list .card .add {
+  width: 40px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  padding: 12px 0;
+  text-align: center;
+  text-indent: -1px;
+  background-color: #f9f9f9;
+  color: #9AACC1;
+}
+
+.container .main-content .todo-content .todo-list .card .add:hover {
+  background-color: #f1f1f1;
+  color: #7a92ae;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.container .main-content .todo-content .todo-list .card textarea {
+  width: 80%;
+  margin-left: 40px;
+  border: none;
+  border-radius: 0;
+  background-color: #f9f9f9;
+}
+
+.container .main-content .todo-content .todo-list .card .save {
+  text-align: center;
+  background-color: #FC6C43;
+  color: #fff;
+  padding: 10px;
+  margin: 20px auto 5px auto;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.container .main-content .todo-content .todo-list .card .save:hover {
+  background-color: #fc582a;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.container .main-content .todo-content .show {
+  display: block;
+}
+/*# sourceMappingURL=todolist.css.map */

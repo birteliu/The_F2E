@@ -1,0 +1,152 @@
+.mh-50 {
+  min-height: 50vmin;
+}
+
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+}
+
+.order3 {
+  order: 3;
+}
+
+.bgw {
+  background-color: #fff;
+}
+
+.bgg {
+  background-color: #E2E5E9;
+}
+
+.bgdg {
+  background-color: #D4D9DD;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.header-img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  float: left;
+  overflow: hidden;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+  transition: all linear .1s;
+  width: 100%;
+  float: left;
+  display: block;
+  margin: 0 1.33333% 0 0;
+  box-sizing: border-box;
+  align-content: center;
+  padding: 35vmin 0;
+}
+
+header .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: .7;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+header .header-text {
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.main-content {
+  width: 100%;
+  float: left;
+  display: block;
+  margin: 0 1.33333% 0 0;
+  box-sizing: border-box;
+  align-content: center;
+  margin-right: 0;
+}
+
+.main-content section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  align-content: stretch;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.main-content section .flex-6 {
+  width: calc((100% / 12) * 6);
+  margin: 0;
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  flex-flow: column wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content section .flex-6 .flex-12 {
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  flex-flow: column wrap;
+  padding: 0;
+  position: relative;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.main-content section .flex-6 .flex-12.h100 {
+  height: 100vmin;
+}
+
+.main-content section .flex-6 .flex-12.h50 {
+  height: 50vmin;
+}
+
+.main-content section .flex-6 .flex-12 a h2 {
+  color: #343434;
+  float: left;
+  font-weight: bold;
+}
+
+.main-content section .flex-6 .flex-12 a h5 {
+  float: right;
+  color: #343434;
+  font-weight: bold;
+}
+
+.main-content section .flex-6 .flex-12 a img {
+  width: 100%;
+  margin-top: -70px;
+}
+
+.main-content section .flex-6 .flex-12 a img.mt0 {
+  margin-top: 0;
+}
+/*# sourceMappingURL=product-gallery.css.map */
