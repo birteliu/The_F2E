@@ -109,6 +109,12 @@ header .header-text {
   margin: 0;
 }
 
+@media screen and (max-width: 575px) {
+  .main-content section .flex-6 {
+    width: 100%;
+  }
+}
+
 .main-content section .flex-6 .flex-12 {
   margin: 0;
   width: 100%;
@@ -129,6 +135,12 @@ header .header-text {
   height: 50vmin;
 }
 
+@media screen and (max-width: 575px) {
+  .main-content section .flex-6 .flex-12.h50 {
+    height: 100vmin;
+  }
+}
+
 .main-content section .flex-6 .flex-12 a h2 {
   color: #343434;
   float: left;
@@ -146,7 +158,19 @@ header .header-text {
   margin-top: -70px;
 }
 
+@media screen and (max-width: 575px) {
+  .main-content section .flex-6 .flex-12 a img {
+    margin-top: -30px;
+  }
+}
+
 .main-content section .flex-6 .flex-12 a img.mt0 {
   margin-top: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .main-content section .flex-6 .flex-12 a img.mt0 {
+    margin-top: -30px;
+  }
 }
 /*# sourceMappingURL=product-gallery.css.map */

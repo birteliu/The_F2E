@@ -115,6 +115,9 @@ header {
       flex-flow: column wrap;
       padding: 0;
       margin: 0;
+      @include phone {
+        width: 100%;
+      }
       .flex-12 {
         margin: 0;
         width: 100%;
@@ -130,6 +133,9 @@ header {
         }
         &.h50 {
           height: 50vmin;
+          @include phone {
+            height: 100vmin;
+          }
         }
         a {
           h2 {
@@ -145,8 +151,14 @@ header {
           img {
             width: 100%;
             margin-top: -70px;
+            @include phone {
+              margin-top: -30px;
+            }
             &.mt0 {
               margin-top: 0;
+              @include phone {
+                margin-top: -30px;
+              }
             }
           }
         }
