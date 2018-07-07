@@ -1,0 +1,262 @@
+* {
+  font-family: "Hind Siliguri", sans-serif;
+  position: relative;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+header h2 {
+  line-height: 80px;
+  margin: 0;
+}
+
+.content {
+  padding: 3em 1em;
+  max-width: 767px;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 2em 0;
+  }
+}
+
+.content .comic-section {
+  background-color: #44ff30;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .content .comic-section {
+    background-color: #fff;
+  }
+}
+
+.content .comic-section img {
+  width: 50%;
+  margin: 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+  .content .comic-section img {
+    display: block;
+    margin: auto;
+    z-index: 999;
+  }
+}
+
+.content .comic-section .text-area {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2em;
+  float: right;
+}
+
+@media screen and (max-width: 767px) {
+  .content .comic-section .text-area {
+    width: 100%;
+    float: none;
+    background-color: #44ff30;
+    margin-top: -160px;
+    padding-top: 180px;
+  }
+}
+
+.content .comic-section .text-area h3 {
+  font-size: 1.5em;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .content .comic-section .text-area h3 {
+    text-align: center;
+  }
+}
+
+.content .comic-section .text-area hr {
+  border-color: #000;
+  border-width: 2px;
+}
+
+.content .comic-section .text-area .detail {
+  padding: 15px 0;
+}
+
+.content .comic-section .text-area .detail ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.content .comic-section .text-area .detail ul.list {
+  width: 30%;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+}
+
+.content .comic-section .text-area .detail ul.list-content {
+  width: 65%;
+  padding: 0;
+  margin: 0;
+}
+
+.content .comic-section .text-area .detail ul li {
+  list-style-type: none;
+}
+
+.content .comic-section .text-area .detail .about .title {
+  padding-top: 15px;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+.content .comic-section .text-area .detail .about p {
+  margin-top: 5px;
+}
+
+.content .comic-section .text-area .detail a {
+  color: #000;
+  text-decoration: none;
+  border: solid 2px #000;
+  display: inline-block;
+  width: 93%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 40px;
+  font-weight: bold;
+  font-weight: 1.2em;
+}
+
+.content .comic-section .text-area .detail a:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  background-color: #000;
+  color: #fff;
+}
+
+.content .chapter-section {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 20px 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .content .chapter-section {
+    padding: 2em;
+  }
+}
+
+.content .chapter-section .title h4 {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 900;
+  margin: 5px;
+}
+
+.content .chapter-section .title h4.title1 {
+  float: left;
+  width: 40%;
+}
+
+.content .chapter-section .title h4.title2 {
+  float: right;
+  width: 40%;
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .content .chapter-section .title h4.title2 {
+    display: none;
+  }
+}
+
+.content .chapter-section .title hr {
+  clear: both;
+  border-color: #000;
+  border-width: 2px;
+}
+
+.content .chapter-section .chapter a {
+  color: #000;
+  text-decoration: none;
+  width: 100%;
+}
+
+.content .chapter-section .chapter a p {
+  padding: 10px 5px 12px 5px;
+  margin: 0;
+}
+
+.content .chapter-section .chapter a p:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  text-decoration: underline;
+}
+
+.content .chapter-section .chapter a p.chapter-name {
+  float: left;
+}
+
+@media screen and (max-width: 575px) {
+  .content .chapter-section .chapter a p.chapter-name {
+    float: none;
+    padding: 0 5px;
+  }
+}
+
+.content .chapter-section .chapter a p.date {
+  float: right;
+}
+
+@media screen and (max-width: 575px) {
+  .content .chapter-section .chapter a p.date {
+    color: #a6a6a6;
+    float: none;
+    padding: 0 5px;
+    text-align: right;
+  }
+}
+
+.content .chapter-section .chapter a p.date span {
+  background-color: #44ff30;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .content .chapter-section .chapter a p.date span {
+    color: #000;
+  }
+}
+
+.content .chapter-section .chapter hr {
+  clear: both;
+  border-color: #000;
+}
+/*# sourceMappingURL=comic-viewer.css.map */

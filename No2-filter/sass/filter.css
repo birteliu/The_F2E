@@ -177,17 +177,49 @@ body {
   width: 70%;
   border-radius: 5px;
   border: 1px solid #B3C3CF;
+  -webkit-transition: .3s;
   transition: .3s;
   float: right;
 }
 
+.header-content .search::-webkit-input-placeholder {
+  color: #B3C3CF;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.header-content .search:-ms-input-placeholder {
+  color: #B3C3CF;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.header-content .search::-ms-input-placeholder {
+  color: #B3C3CF;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
 .header-content .search::placeholder {
   color: #B3C3CF;
+  -webkit-transition: .2s;
   transition: .2s;
 }
 
 .header-content .search:focus, .header-content .search:hover {
   border: 1px solid #94aabb;
+}
+
+.header-content .search:focus::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.header-content .search:focus:-ms-input-placeholder {
+  color: #fff;
+}
+
+.header-content .search:focus::-ms-input-placeholder {
+  color: #fff;
 }
 
 .header-content .search:focus::placeholder {
@@ -228,6 +260,7 @@ body {
 .search-result a:hover {
   text-decoration: none;
   color: #94aabb;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -255,11 +288,14 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 1em;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: none;
   border: 1px solid #B3C3CF;
   outline: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 1em;
   line-height: inherit;
   color: #B3C3CF;
@@ -272,6 +308,7 @@ body {
 
 .filter-content .select-area select:hover {
   color: #94aabb;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -288,7 +325,10 @@ body {
   margin-top: 1em;
   cursor: pointer;
   font-size: 1em;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #B3C3CF;
 }
 
@@ -299,6 +339,7 @@ body {
 
 .filter-content .check-box .check-content:hover input ~ .checkmark {
   background-color: #f2f4f6;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -310,6 +351,7 @@ body {
 
 .filter-content .check-box .check-content input:checked ~ .checkmark {
   background-color: #B3C3CF;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -342,7 +384,6 @@ body {
   border: solid white;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -353,6 +394,7 @@ body {
 
 .filter-content .choose-box .choose-content:hover input ~ .radiobtn {
   background-color: white;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -364,6 +406,7 @@ body {
 
 .filter-content .choose-box .choose-content input:checked ~ .radiobtn {
   background-color: #B3C3CF;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -443,7 +486,9 @@ body {
 }
 
 .filter-card a .card:hover {
-  box-shadow: 2px 2px 5px #d2dce3;
+  -webkit-box-shadow: 2px 2px 5px #d2dce3;
+          box-shadow: 2px 2px 5px #d2dce3;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -503,6 +548,7 @@ body {
 
 .filter-card .page li a:hover {
   background-color: #f8f9fa;
+  -webkit-transition: .3s;
   transition: .3s;
   color: #94aabb;
 }
@@ -514,6 +560,7 @@ body {
 
 .filter-card .page li a.actived:hover {
   background-color: #94aabb;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -523,6 +570,7 @@ body {
 
 .filter-card .page li a.page-icon:hover {
   color: #94aabb;
+  -webkit-transition: .3s;
   transition: .3s;
 }
 /*# sourceMappingURL=filter.css.map */

@@ -157,6 +157,8 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -170,11 +172,14 @@ body {
 .container .main-content {
   margin: 50px auto;
   padding: 30px 25px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f9f9f9;
   width: 55%;
   border-radius: 10px;
-  box-shadow: 0 2px 19px #EE6139;
+  -webkit-box-shadow: 0 2px 19px #EE6139;
+          box-shadow: 0 2px 19px #EE6139;
 }
 
 @media screen and (max-width: 992px) {
@@ -224,6 +229,7 @@ body {
 
 .container .main-content header .menu button:hover {
   color: #7a92ae;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
@@ -269,12 +275,25 @@ body {
   border: none;
 }
 
+.container .main-content .todo-content .add-list input::-webkit-input-placeholder {
+  color: #9AACC1;
+}
+
+.container .main-content .todo-content .add-list input:-ms-input-placeholder {
+  color: #9AACC1;
+}
+
+.container .main-content .todo-content .add-list input::-ms-input-placeholder {
+  color: #9AACC1;
+}
+
 .container .main-content .todo-content .add-list input::placeholder {
   color: #9AACC1;
 }
 
 .container .main-content .todo-content .todo-list {
-  box-shadow: 0 2px 5px #E8E8E8;
+  -webkit-box-shadow: 0 2px 5px #E8E8E8;
+          box-shadow: 0 2px 5px #E8E8E8;
   display: none;
 }
 
@@ -294,6 +313,7 @@ body {
 
 .container .main-content .todo-content .todo-list button .far:hover {
   color: #7a92ae;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -371,6 +391,7 @@ body {
 .container .main-content .todo-content .todo-list .card .add:hover {
   background-color: #f1f1f1;
   color: #7a92ae;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   cursor: pointer;
 }
@@ -395,6 +416,7 @@ body {
 
 .container .main-content .todo-content .todo-list .card .save:hover {
   background-color: #fc582a;
+  -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   cursor: pointer;
 }

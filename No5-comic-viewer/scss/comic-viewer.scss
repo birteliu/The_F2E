@@ -1,0 +1,216 @@
+$color-main: #44ff30;
+
+$pad-w: 767px;
+$phone-w: 575px;
+@mixin pad {
+  @media screen and (max-width: $pad-w) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone-w) {
+    @content;
+  }
+}
+
+* {
+  font-family: "Hind Siliguri", sans-serif;
+  position: relative;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  height: 80px;
+  text-align: center;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.2);
+  h2 {
+    line-height: 80px;
+    margin: 0;
+  }
+}
+.content {
+  padding: 3em 1em;
+  max-width: 767px;
+  margin: auto;
+  @include pad {
+    padding: 2em 0;
+  }
+  .comic-section {
+    background-color: $color-main;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    @include pad {
+      background-color: #fff;
+    }
+    img {
+      width: 50%;
+      margin: 0;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      vertical-align: middle;
+      @include pad {
+        display: block;
+        margin: auto;
+        z-index: 999;
+      }
+    }
+    .text-area {
+      display: inline-block;
+      width: 50%;
+      margin: 0;
+      box-sizing: border-box;
+      padding: 2em;
+      float: right;
+      @include pad {
+        width: 100%;
+        float: none;
+        background-color: $color-main;
+        margin-top: -160px;
+        padding-top: 180px;
+      }
+      h3 {
+        font-size: 1.5em;
+        margin: 0;
+        padding-bottom: 10px;
+        @include pad {
+          text-align: center;
+        }
+      }
+      hr {
+        border-color: #000;
+        border-width: 2px;
+      }
+      .detail {
+        padding: 15px 0;
+        ul {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          font-size: 1.1em;
+          &.list {
+            width: 30%;
+            font-weight: 900;
+            padding: 0;
+            margin: 0;
+          }
+          &.list-content {
+            width: 65%;
+            padding: 0;
+            margin: 0;
+          }
+          li {
+            list-style-type: none;
+          }
+        }
+        .about {
+          .title {
+            padding-top: 15px;
+            font-size: 1.1em;
+            font-weight: 900;
+          }
+          p {
+            margin-top: 5px;
+          }
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+          border: solid 2px #000;
+          display: inline-block;
+          width: 93%;
+          padding: 10px;
+          text-align: center;
+          border-radius: 40px;
+          font-weight: bold;
+          font-weight: 1.2em;
+          &:hover {
+            transition-duration: 0.5s;
+            background-color: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .chapter-section {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px 5px;
+    @include pad {
+      padding: 2em;
+    }
+    .title {
+      h4 {
+        display: inline-block;
+        font-size: 1.2em;
+        font-weight: 900;
+        margin: 5px;
+        &.title1 {
+          float: left;
+          width: 40%;
+        }
+        &.title2 {
+          float: right;
+          width: 40%;
+          text-align: right;
+          @include pad {
+            display: none;
+          }
+        }
+      }
+      hr {
+        clear: both;
+        border-color: #000;
+        border-width: 2px;
+      }
+    }
+    .chapter {
+      a {
+        color: #000;
+        text-decoration: none;
+        width: 100%;
+        p {
+          padding: 10px 5px 12px 5px;
+          margin: 0;
+          &:hover {
+            transition-duration: 1s;
+            text-decoration: underline;
+          }
+          &.chapter-name {
+            float: left;
+            @include phone {
+              float: none;
+              padding: 0 5px;
+            }
+          }
+          &.date {
+            float: right;
+            @include phone {
+              color: #a6a6a6;
+              float: none;
+              padding: 0 5px;
+              text-align: right;
+            }
+            span {
+              background-color: $color-main;
+              padding: 0 10px;
+              margin-right: 10px;
+              @include phone {
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+      hr {
+        clear: both;
+        border-color: #000;
+      }
+    }
+  }
+}
