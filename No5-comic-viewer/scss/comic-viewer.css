@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Hind Siliguri", sans-serif;
   position: relative;
@@ -208,15 +209,19 @@ header h2 {
   width: 100%;
 }
 
+.content .chapter-section .chapter a:hover p {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  color: #0e9600;
+}
+
+.content .chapter-section .chapter a:hover p span {
+  color: #000;
+}
+
 .content .chapter-section .chapter a p {
   padding: 10px 5px 12px 5px;
   margin: 0;
-}
-
-.content .chapter-section .chapter a p:hover {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  text-decoration: underline;
 }
 
 .content .chapter-section .chapter a p.chapter-name {
@@ -258,5 +263,71 @@ header h2 {
 .content .chapter-section .chapter hr {
   clear: both;
   border-color: #000;
+}
+
+.content .ad .slide {
+  -webkit-animation: round 15s linear infinite;
+          animation: round 15s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.content .ad .slide:nth-child(3) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.content .ad .slide:nth-child(2) {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.content .ad .slide:nth-child(1) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.content .ad .slide img {
+  width: 100%;
+}
+
+@-webkit-keyframes round {
+  6% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+  }
+  30% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+  }
+  36% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/
+  }
+}
+
+@keyframes round {
+  6% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+  }
+  30% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+  }
+  36% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* 5-6秒淡出*/
+  }
 }
 /*# sourceMappingURL=comic-viewer.css.map */
