@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Birte - No.6 Validation</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/validation.css">
+</head>
+
+<body>
+    
+    <header>
+        <div></div>
+    </header>
+    <div class="bar">
+        <ul>
+            <li class="active">&bull;</li>
+            <li>&bull;</li>
+            <li>&bull;</li>
+            <li>&bull;</li>
+        </ul>
+    </div>
+    <h2>Create Account</h2>
+    <h5>Hello ni hao ma!</h5>
+    <div class="form-section">
+        <form action="">
+            <div class="each-form">
+                <label for="usrmail">Account</label>
+                <input type="email" id="usrmail" name="usrmail" placeholder="zyi870213@gmail.com" required="required">
+            </div>
+            <div class="each-form">
+                <label for="psw">Password</label>
+                <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="您的密碼必須是八個字符，並包含只少一個數字、一個大寫字母和一個小寫字母"
+                    onkeyup='check();' required>
+            </div>
+            <div class="each-form">
+                <label for="confirm_password">Comfirm Password</label>
+                <input type="password" name="confirm_password" id="confirm_password" onkeyup='check();'>
+                <span id='message'></span>
+            </div>
+            <div class="submit-btn">
+                <input type="submit" value="SUBMIT &amp; NEXT">
+            </div>
+        </form>
+    </div>
+    <script>
+        var check = function () {
+            if (document.getElementById('psw').value ==
+                document.getElementById('confirm_password').value) {
+                document.getElementById('message').style.color = '#2f3352';
+                document.getElementById('message').innerHTML = '符合';
+            } else {
+                document.getElementById('message').style.color = '#35e8e0';
+                document.getElementById('message').innerHTML = '密碼不相符';
+            }
+        }
+    </script>
+</body>
+
+</html>

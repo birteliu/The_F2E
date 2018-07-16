@@ -4,3 +4,5 @@
 - No.2 [filter](https://birteliu.github.io/The_F2E/No2-filter/)
 - No.3 [admin](https://birteliu.github.io/The_F2E/No3-admin/)
 - No.4 [product gallery](https://birteliu.github.io/The_F2E/No4-product-gallery/)
+- No.5 [comic viewer](https://birteliu.github.io/The_F2E/No5-comic-viewer/)
+- No.6 [validation](https://birteliu.github.io/The_F2E/No6-validation/)

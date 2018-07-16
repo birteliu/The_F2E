@@ -1,0 +1,194 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: #101223;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+header div {
+  background-color: #35e8e0;
+  display: inline-block;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 50%;
+  height: 8px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (max-width: 575px) {
+  header div {
+    width: 80%;
+  }
+}
+
+.bar ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.bar ul li {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #2f3352;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 20px;
+  color: #2f3352;
+  line-height: 15px;
+  position: relative;
+}
+
+.bar ul li:after {
+  width: 46px;
+  height: 2px;
+  background-color: #2f3352;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 17px;
+}
+
+.bar ul li.active {
+  color: #35e8e0;
+  border-color: #35e8e0;
+}
+
+.bar ul li:last-child:after {
+  content: none;
+}
+
+h2 {
+  text-align: center;
+  color: #35e8e0;
+  font-size: 3em;
+  margin: 0;
+}
+
+h5 {
+  text-align: center;
+  color: #35e8e0;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.form-section {
+  color: #fff;
+  padding: 30px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-section form {
+  width: 60%;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .form-section form {
+    width: 100%;
+  }
+}
+
+.form-section form .each-form {
+  width: 50%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 575px) {
+  .form-section form .each-form {
+    width: 80%;
+  }
+}
+
+.form-section form .each-form label {
+  width: 100%;
+  padding: 5px 10px;
+  line-height: 2;
+  font-size: 1.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-section form .each-form input {
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #101223;
+  border: 1px solid #35e8e0;
+  color: #fff;
+  font-size: 1.2em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-section form .each-form input::-webkit-input-placeholder {
+  color: #2f3352;
+}
+
+.form-section form .each-form input:-ms-input-placeholder {
+  color: #2f3352;
+}
+
+.form-section form .each-form input::-ms-input-placeholder {
+  color: #2f3352;
+}
+
+.form-section form .each-form input::placeholder {
+  color: #2f3352;
+}
+
+.form-section form .each-form input:focus, .form-section form .each-form input:-webkit-autofill:focus {
+  color: #35e8e0;
+}
+
+.form-section form .each-form input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0px 9999px #35e8e0;
+}
+
+.form-section form .submit-btn {
+  text-align: center;
+  width: 100%;
+}
+
+.form-section form .submit-btn input[type="submit"] {
+  width: 50%;
+  padding: 10px 20px;
+  background: #35e8e0;
+  border: 0 none;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #101223;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #101223;
+}
+
+@media screen and (max-width: 575px) {
+  .form-section form .submit-btn input[type="submit"] {
+    width: 80%;
+  }
+}
+
+.form-section form .submit-btn input[type="submit"]:hover {
+  background: #63ede7;
+  color: #303669;
+}
+/*# sourceMappingURL=validation.css.map */

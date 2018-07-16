@@ -1,0 +1,168 @@
+$dark-color: #101223;
+$gray-blue: #2f3352;
+$light-green: #35e8e0;
+
+$pad-w: 767px;
+$phone-w: 575px;
+@mixin pad {
+  @media screen and (max-width: $pad-w) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone-w) {
+    @content;
+  }
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: $dark-color;
+}
+header {
+  margin: 0;
+  padding: 0;
+  div {
+    background-color: $light-green;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    height: 8px;
+    transform: translateX(-50%);
+    @include phone {
+      width: 80%;
+    }
+  }
+}
+
+.bar {
+  ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    li {
+      width: 15px;
+      height: 15px;
+      border: 2px solid $gray-blue;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 20px;
+      color: $gray-blue;
+      line-height: 15px;
+      position: relative;
+      &:after {
+        width: 46px;
+        height: 2px;
+        background-color: $gray-blue;
+        content: "";
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 17px;
+      }
+      &.active {
+        color: $light-green;
+        border-color: $light-green;
+      }
+      &:last-child:after {
+        content: none;
+      }
+      &:first-child:after {
+        //background-color: $light-green;
+      }
+    }
+  }
+}
+
+h2 {
+  text-align: center;
+  color: $light-green;
+  font-size: 3em;
+  margin: 0;
+}
+h5 {
+  text-align: center;
+  color: $light-green;
+  margin: 0;
+  font-size: 1.5em;
+}
+.form-section {
+  color: #fff;
+  padding: 30px 10px;
+  box-sizing: border-box;
+  form {
+    width: 60%;
+    margin: auto;
+    box-sizing: border-box;
+    @include pad {
+      width: 100%;
+    }
+    .each-form {
+      width: 50%;
+      margin: 20px auto;
+      @include phone {
+        width: 80%;
+      }
+      label {
+        width: 100%;
+        padding: 5px 10px;
+        line-height: 2;
+        font-size: 1.2em;
+        box-sizing: border-box;
+      }
+      input {
+        width: 100%;
+        padding: 10px 10px;
+        background-color: $dark-color;
+        border: 1px solid $light-green;
+        color: #fff;
+        font-size: 1.2em;
+        transition: all 0.3s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        &::placeholder {
+          color: $gray-blue;
+        }
+        &:focus,
+        &:-webkit-autofill:focus {
+          color: $light-green;
+        }
+        &:-webkit-autofill {
+          -webkit-box-shadow: inset 0 0 0px 9999px $light-green;
+        }
+      }
+    }
+    .submit-btn {
+      text-align: center;
+      width: 100%;
+      input[type="submit"] {
+        width: 50%;
+        padding: 10px 20px;
+        background: $light-green;
+        border: 0 none;
+        cursor: pointer;
+        font-size: 1.2em;
+        color: $dark-color;
+        transition: all 0.3s ease-in-out;
+        color: $dark-color;
+        @include phone {
+          width: 80%;
+        }
+        &:hover {
+          background: lighten($light-green, 10%);
+          color: lighten($dark-color, 20%);
+        }
+      }
+    }
+  }
+}
