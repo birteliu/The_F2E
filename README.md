@@ -6,3 +6,4 @@
 - No.4 [product gallery](https://birteliu.github.io/The_F2E/No4-product-gallery/)
 - No.5 [comic viewer](https://birteliu.github.io/The_F2E/No5-comic-viewer/)
 - No.6 [validation](https://birteliu.github.io/The_F2E/No6-validation/)
+- No.7 [canvas game](https://birteliu.github.io/The_F2E/No7-canvas-game/)
