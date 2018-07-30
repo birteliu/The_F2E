@@ -46,16 +46,18 @@ body {
     transform: translateX(-50%) translateY(-50%);
     animation: square 1s infinite;
     animation-timing-function: ease-in;
+    animation-duration: 10s;
   }
   .circle {
-    width: 500px;
-    height: 500px;
+    width: 550px;
+    height: 550px;
     background-color: $dark-blue;
     border-radius: 50%;
     @include center;
     transform: translateX(-50%) translateY(-50%);
     animation: circle 1s infinite;
     animation-timing-function: ease-in;
+    animation-duration: 10s;
   }
   .star {
     background-color: $color-pink;
@@ -78,6 +80,7 @@ body {
     @include center;
     transform: translateX(-50%) translateY(-50%);
     animation: star 1s infinite;
+    animation-duration: 10s;
   }
   .text {
     @include center;
@@ -103,12 +106,20 @@ body {
     transform: rotate(0) translateX(-50%) translateY(-50%);
     transform-origin: 0% 0%;
   }
-  50% {
-    transform: rotate(45deg) translateX(-50%) translateY(-50%);
+  38% {
+    transform: rotate(18deg) translateX(-50%) translateY(-50%);
+    transform-origin: 0% 0%;
+  }
+  76% {
+    transform: rotate(360deg) translateX(-50%) translateY(-50%);
+    transform-origin: 0% 0%;
+  }
+  80% {
+    transform: scale(1) translateX(-50%) translateY(-50%);
     transform-origin: 0% 0%;
   }
   100% {
-    transform: rotate(90deg) translateX(-50%) translateY(-50%);
+    transform: scale(20) translateX(-50%) translateY(-50%);
     transform-origin: 0% 0%;
   }
 }
@@ -118,14 +129,22 @@ body {
     @include center;
     transform-origin: 0% 0%;
   }
-  50% {
-    transform: scale(0.95) translateX(-50%) translateY(-50%);
+  38% {
+    transform: scale(0.9) translateX(-50%) translateY(-50%);
     @include center;
     transform-origin: 0% 0%;
   }
-  100% {
+  76% {
     transform: scale(1) translateX(-50%) translateY(-50%);
     @include center;
+    transform-origin: 0% 0%;
+  }
+  85% {
+    transform: scale(1) translateX(-50%) translateY(-50%);
+    transform-origin: 0% 0%;
+  }
+  100% {
+    transform: scale(20) translateX(-50%) translateY(-50%);
     transform-origin: 0% 0%;
   }
 }
@@ -134,12 +153,20 @@ body {
     transform: rotate(0) translateX(-50%) translateY(-50%);
     transform-origin: 0% 0%;
   }
-  50% {
-    transform: rotate(-90deg) translateX(-50%) translateY(-50%);
+  38% {
+    transform: rotate(-180deg) translateX(-50%) translateY(-50%);
+    transform-origin: 0% 0%;
+  }
+  76% {
+    transform: rotate(-360deg) translateX(-50%) translateY(-50%);
+    transform-origin: 0% 0%;
+  }
+  90% {
+    transform: scale(1) translateX(-50%) translateY(-50%);
     transform-origin: 0% 0%;
   }
   100% {
-    transform: rotate(-180deg) translateX(-50%) translateY(-50%);
+    transform: scale(20) translateX(-50%) translateY(-50%);
     transform-origin: 0% 0%;
   }
 }
