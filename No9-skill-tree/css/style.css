@@ -163,6 +163,7 @@ body {
 
 .container .col-4.center-section .level .icon-column img {
   width: 100%;
+  z-index: 5;
 }
 
 .container .col-4.center-section .level .skill-column {
