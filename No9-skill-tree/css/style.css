@@ -30,7 +30,7 @@ body {
   padding: 20px 50px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container {
     padding: 20px;
   }
@@ -54,14 +54,14 @@ body {
 
 .container .col-4.left-section h3 {
   color: #ff0093;
-  font-size: 4.5em;
+  font-size: 3em;
   font-weight: 900;
   font-style: italic;
   letter-spacing: 2px;
   margin-top: 0;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container .col-4.left-section h3 {
     font-size: 2.5em;
   }
@@ -72,11 +72,11 @@ body {
   color: #250060;
   background-color: #8000ff;
   padding: 5px 20px;
-  font-size: 2em;
+  font-size: 1em;
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container .col-4.left-section span {
     font-size: 1em;
   }
@@ -84,14 +84,14 @@ body {
 
 .container .col-4.left-section h4 {
   color: #fff;
-  font-size: 3.5em;
+  font-size: 2em;
   margin: 5px;
   border-bottom: 5px solid #8000ff;
   display: inline-block;
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container .col-4.left-section h4 {
     font-size: 2em;
   }
@@ -105,12 +105,12 @@ body {
 .container .col-4.left-section p {
   color: #fff;
   border: 1px solid #ff0093;
-  padding: 50px 30px;
-  font-size: 24px;
-  line-height: 35px;
+  padding: 30px 20px;
+  font-size: 15px;
+  line-height: 25px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container .col-4.left-section p {
     font-size: 16px;
     padding: 20px;
@@ -122,11 +122,11 @@ body {
   color: #ff0093;
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 15px;
   display: inline;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container .col-4.left-section p span {
     font-size: 16px;
   }
@@ -156,7 +156,7 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: calc(100% - 35%);
+  top: calc(100% - 50%);
   -webkit-clip-path: polygon(20% 70%, 20% 40%, 80% 40%, 80% 70%, 100% 70%, 50% 100%, 0 70%);
           clip-path: polygon(20% 70%, 20% 40%, 80% 40%, 80% 70%, 100% 70%, 50% 100%, 0 70%);
 }
@@ -182,26 +182,26 @@ body {
 }
 
 .container .col-4.center-section .level .skill-column i.icon-big {
-  font-size: 60px;
+  font-size: 30px;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 15px;
 }
 
 .container .col-4.center-section .level .skill-column .detail {
   color: #fff;
-  font-size: 24px;
+  font-size: 14px;
   padding: 10px 0;
   line-height: 1.5;
 }
 
 .container .col-4.center-section .level .skill-column .detail .icon-small {
-  font-size: 24px;
+  font-size: 14px;
   padding-top: 6px;
 }
 
 .container .col-4.center-section .level .skill-column .detail span {
   display: inline-block;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .container .col-4.center-section .level .level2 {
@@ -211,9 +211,9 @@ body {
 .container .col-4.center-section .level .level2.icon-column:after {
   width: 100px;
   height: 220px;
-  top: calc(100% - 10%);
-  -webkit-clip-path: polygon(20% 85%, 20% 0, 80% 0, 80% 85%, 100% 85%, 50% 100%, 0 85%);
-          clip-path: polygon(20% 85%, 20% 0, 80% 0, 80% 85%, 100% 85%, 50% 100%, 0 85%);
+  top: calc(100% - 37%);
+  -webkit-clip-path: polygon(20% 85%, 20% 12%, 80% 12%, 80% 85%, 100% 85%, 50% 100%, 0 85%);
+          clip-path: polygon(20% 85%, 20% 12%, 80% 12%, 80% 85%, 100% 85%, 50% 100%, 0 85%);
 }
 
 .container .col-4.center-section .level .level4 {
@@ -239,34 +239,34 @@ body {
 }
 
 .container .col-4.right-section .up i {
-  font-size: 300px;
+  font-size: 100px;
   padding-top: 50px;
 }
 
 .container .col-4.right-section .up h4 {
-  font-size: 3.5em;
+  font-size: 2.5em;
   text-align: center;
   letter-spacing: 2px;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 .container .col-4.right-section .down {
   background-color: #6600cc;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .container .col-4.right-section .down i {
-  font-size: 60px;
+  font-size: 30px;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container .col-4.right-section .down i {
     font-size: 30px;
   }
 }
 
 .container .col-4.right-section .down h5 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-top: 15px;
   margin-bottom: 20px;
 }
@@ -279,10 +279,10 @@ body {
   margin: 15px auto;
   border: 2px solid #fff;
   padding: 10px 0;
-  font-size: 1.8em;
+  font-size: 1em;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   .container .col-4.right-section .down a {
     width: 80%;
   }

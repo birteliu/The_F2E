@@ -45,7 +45,7 @@ body {
   width: 100%;
   font-size: 0;
   padding: 20px 50px;
-  @include phone {
+  @include pad {
     padding: 20px;
   }
   .col-4 {
@@ -59,12 +59,12 @@ body {
       padding: 20px 40px;
       h3 {
         color: $light-pink;
-        font-size: 4.5em;
+        font-size: 3em;
         font-weight: 900;
         font-style: italic;
         letter-spacing: 2px;
         margin-top: 0;
-        @include phone {
+        @include pad {
           font-size: 2.5em;
         }
       }
@@ -73,20 +73,20 @@ body {
         color: $dark-purple;
         background-color: $light-purple;
         padding: 5px 20px;
-        font-size: 2em;
+        font-size: 1em;
         margin-bottom: 10px;
-        @include phone {
+        @include pad {
           font-size: 1em;
         }
       }
       h4 {
         color: #fff;
-        font-size: 3.5em;
+        font-size: 2em;
         margin: 5px;
         border-bottom: 5px solid $light-purple;
         display: inline-block;
         letter-spacing: 1px;
-        @include phone {
+        @include pad {
           font-size: 2em;
         }
       }
@@ -97,10 +97,10 @@ body {
       p {
         color: #fff;
         border: 1px solid $light-pink;
-        padding: 50px 30px;
-        font-size: 24px;
-        line-height: 35px;
-        @include phone {
+        padding: 30px 20px;
+        font-size: 15px;
+        line-height: 25px;
+        @include pad {
           font-size: 16px;
           padding: 20px;
         }
@@ -109,9 +109,9 @@ body {
           color: $light-pink;
           padding: 0;
           margin: 0;
-          font-size: 24px;
+          font-size: 15px;
           display: inline;
-          @include phone {
+          @include pad {
             font-size: 16px;
           }
         }
@@ -134,7 +134,7 @@ body {
             background-color: rgba(128, 0, 255, 0.4);
             left: 50%;
             transform: translateX(-50%);
-            top: calc(100% - 35%);
+            top: calc(100% - 50%);
             clip-path: polygon(
               20% 70%,
               20% 40%,
@@ -161,23 +161,23 @@ body {
           i {
             color: #fff;
             &.icon-big {
-              font-size: 60px;
+              font-size: 30px;
               background-color: rgba(255, 255, 255, 0.2);
               padding: 15px;
             }
           }
           .detail {
             color: #fff;
-            font-size: 24px;
+            font-size: 14px;
             padding: 10px 0;
             line-height: 1.5;
             .icon-small {
-              font-size: 24px;
+              font-size: 14px;
               padding-top: 6px;
             }
             span {
               display: inline-block;
-              font-size: 24px;
+              font-size: 14px;
             }
           }
         }
@@ -187,11 +187,11 @@ body {
             &:after {
               width: 100px;
               height: 220px;
-              top: calc(100% - 10%);
+              top: calc(100% - 37%);
               clip-path: polygon(
                 20% 85%,
-                20% 0,
-                80% 0,
+                20% 12%,
+                80% 12%,
                 80% 85%,
                 100% 85%,
                 50% 100%,
@@ -221,27 +221,27 @@ body {
         background-color: $light-purple;
         padding: 20px 0;
         i {
-          font-size: 300px;
+          font-size: 100px;
           padding-top: 50px;
         }
         h4 {
-          font-size: 3.5em;
+          font-size: 2.5em;
           text-align: center;
           letter-spacing: 2px;
-          line-height: 1.5;
+          line-height: 1.2;
         }
       }
       .down {
         background-color: darken($light-purple, 10%);
-        padding: 100px 0;
+        padding: 80px 0;
         i {
-          font-size: 60px;
-          @include phone {
+          font-size: 30px;
+          @include pad {
             font-size: 30px;
           }
         }
         h5 {
-          font-size: 2em;
+          font-size: 1.8em;
           margin-top: 15px;
           margin-bottom: 20px;
         }
@@ -253,8 +253,8 @@ body {
           margin: 15px auto;
           border: 2px solid #fff;
           padding: 10px 0;
-          font-size: 1.8em;
-          @include phone {
+          font-size: 1em;
+          @include pad {
             width: 80%;
           }
         }
