@@ -8,4 +8,4 @@
 - No.6 [validation](https://birteliu.github.io/The_F2E/No6-validation/)
 - No.7 [canvas game](https://birteliu.github.io/The_F2E/No7-canvas-game/)
 - No.8 [parallax scrolling](https://birteliu.github.io/The_F2E/No8-parallax-scrolling/index.html)
-- No.9 [skill tree](https://birteliu.github.io/The_F2E/No8-skill-tree/index.html)
+- No.9 [skill tree](https://birteliu.github.io/The_F2E/No9-skill-tree/index.html)
